@@ -120,6 +120,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &83698208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 83698209}
+  m_Layer: 0
+  m_Name: Grille de videos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &83698209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83698208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1401772857}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &626996057
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,12 +334,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thumbnailPrefab: {fileID: 8410695579856548984, guid: d223cd7c8c08ff34fbf098a5d9023677,
     type: 3}
+  renderTexture: {fileID: 8400000, guid: 9f17f817fc09c394e8d2f4f25aafdac7, type: 2}
+  renderMaterial: {fileID: 2100000, guid: cd801ccd59c118946a3988db67d2d93d, type: 2}
+  playing: 0
   thumbnails:
   - {fileID: 21300000, guid: c29d9a07ad9cce94e9939d54f6e187ea, type: 3}
   - {fileID: 21300000, guid: 673a98558bc74ac45bb88031bb3325ff, type: 3}
-  videoUrls:
-  - url 1
-  - url 2
+  videos:
+  - {fileID: 32900000, guid: 444b28422b9547247b2e3020191e21dc, type: 3}
+  - {fileID: 32900000, guid: 444b28422b9547247b2e3020191e21dc, type: 3}
+  videoPlayer: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &1401772853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,12 +436,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401772851}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 83698209}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
